@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xe tank update</title>
+</head>
+<body>
+    <div id="battle" style="border: 1px solid black; width: 190px; height: 190px;position: relative;">
+        <div id="tank" style="position: absolute; background-image: url(https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175511/tank-1.png); 
+        background-size: 100%; width: 19px; height: 19px; top: 0px; left: 0px"></div>
+        <div id="boom" style="position: absolute; background-image: url(https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175453/boom.png);
+        background-size: 100%; width: 19px; height: 19px; top: 76px; left: 95px"></div>
+    </div>
+
+    <div>
+        <table style="position: relative; top: 20px; left: 45px;">
+            <tr>
+                <td></td>
+                <td><button onclick="up_tank()" type="button" style="width: 25px; height: 25px;">&#8593</button></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><button onclick="left_tank()" type="button" style="width: 25px; height: 25px;">&#8592</button></td>
+                <td></td>
+                <td><button onclick="right_tank()" type="button" style="width: 25px; height: 25px;">&#8594</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button onclick="down_tank()" type="button" style="width: 25px; height: 25px;">&#8595</button></td>
+                <td></td>
+            </tr>
+        </table>
+</body>
+</html>
+<script src="tankpro.js"></script>
